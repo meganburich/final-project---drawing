@@ -34,22 +34,32 @@ function setup() {
   settings = createP("Settings")
   
   //color sliders 
-  labelR= createP("Red");
-  labelR.position(550, 50); 
-  labelR.style("background", "red"); 
+
   r = createSlider(1, 255);
-  labelB = createP("Green");
   g = createSlider(1, 255);
-  labelG = createP("Blue");
   b = createSlider(1, 255);
-  r.style("width", "200px"); 
-  r.position(550, 100); 
+  r.style("width", "200px");
+  r.position(550, 65); 
   g.style("width", "200px"); 
+  g.position(550, 110) 
   b.style("width", "200px"); 
+  b.position(550, 155); 
+  
+  //assigning variables to values of sliders
+  redValue = r.value(); 
+  greenValue = g.value(); 
+  blueValue = b.value(); 
   
   //color labels and headings 
   newColor = createP("Change color");
-  newColor.position(500, 10);
+  newColor.position(500, 5);
+  // newColor.style(
+  labelR= createP("Red");
+  labelR.position(550, 30); 
+  labelG = createP("Green")
+  labelG.position(550, 75) 
+  labelB = createP("Blue");
+  labelB.position(550, 120); 
   
   
   
