@@ -35,16 +35,24 @@ function setup() {
   
   //color sliders 
   labelR= createP("Red");
-  // labelR.position(
+  labelR.position(550, 50); 
+  labelR.style("background", "red"); 
   r = createSlider(1, 255);
-  labelB = createP("Green")
+  labelB = createP("Green");
   g = createSlider(1, 255);
   labelG = createP("Blue");
   b = createSlider(1, 255);
   r.style("width", "200px"); 
-  r.position(550, 10); 
+  r.position(550, 100); 
   g.style("width", "200px"); 
   b.style("width", "200px"); 
+  
+  //color labels and headings 
+  newColor = createP("Change color");
+  newColor.position(500, 10);
+  
+  
+  
 
   
   
